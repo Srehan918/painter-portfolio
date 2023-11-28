@@ -1,0 +1,19 @@
+/* Media Query 1440px */
+@media (max-width: 1440px) {
+    #header .main-img img {
+        height: 70vh;
+    } 
+
+}
+
+/* Media Query 1170px */
+@media (max-width: 1170px) {
+    
+  }
+
+ 
+/* Media Query 991px */
+@media (max-width: 991px) {
+    
+
+}

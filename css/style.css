@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+:root {
+  /* color */
+  --heading-color: #3eb489;
+  --heading-dark-color: #31906e;
+  --text-color: #fff;
+  --text-dark-color: #000;
+  /* fonts */
+  --heading-font: "Roboto Slab", serif;
+  --text-font: "Poppins", sans-serif;
+}
+
+body,
+html {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--text-font);
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/*------------------ Headings------------------- */
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 9rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 4.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h4 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h5 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+p {
+  color: var(--text-dark-color);
+  font-family: var(--text-font);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* ---------------------------- */
+
+embed,
+iframe,
+img,
+object {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:active,
+a:hover,
+a:focus,
+button {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:hover,
+button:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+li a {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--heading-color);
+}
+
+/* --------------------------- */
+
+.main-btn {
+  position: relative; 
+  color: var(--text-color);
+  background: transparent;
+  z-index: 1;
+  overflow: hidden;
+  border: 1px solid var(--text-color);
+  /* border-radius: 3.5rem; */
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.main-btn:hover {
+  background-color: var(--heading-dark-color);
+  color: var(--text-color);
+  border: none;
+}
+
+/* ---------------------------- */
+
+.banner_section {
+  /* background: url(../images/banner-slide/top-banner.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+  min-height: auto;
+}
+
+/* ------------------01 Navbar---------------- */
+
+
+#header .full-nav {
+  background-image: url(../images/painting-exhibition.jpg);
+  width: 100%;
+  height: 110vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#header .navbar-brand {
+  width: 180px;
+  margin-top: 5px;
+  margin-left: 18px;
+}
+#header .navbar-brand h1 {
+  font-size: 32px;
+  color: white;
+}
+#header .navbar-brand h1 span {
+  color: var(--heading-color);
+}
+#header .nav-item .nav-link {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.2rem 2rem;
+  margin: 0 0.2rem;
+  font-family: var(--text-font);
+}
+#header .navbar-nav .nav-link:hover,
+#header .navbar-nav .nav-link.active {
+  color: var(--heading-color);
+}
+
+#header .navbar-toggler {
+  color: var(--text-white);
+  font-size: 1.6rem;
+  height: 2.7rem;
+  padding: 0;
+}
+#header .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#header .content {
+    margin-right: 5px ;
+    margin-top: 250px;
+}
+#header .content h3 {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+}
+#header .content h1 {
+    margin-top: 5px;
+    font-size: 88px;
+    font-weight: 500;
+}
+#header .content p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+#header .main-img {
+    margin-top: 160px;
+}
+ #header .main-img img {
+  object-fit: cover;
+  border-radius: 10px;
+   min-width: 100%; 
+  transition: transform 0.5s ease-in-out;
+} 
+#header .main-img img:hover {
+    transform: translateY(-2%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ------------portfolio------------- */
+
+#portfolio h1 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+#Story {
+    height: 80vh;
+    background-image: url(../images/artist-intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center; 
+    object-fit: cover;
+}
+#Story .mystory {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    background: #fff;
+}
+#Story .mystory img {
+    width: 40%;
+    object-fit: cover;
+}
+#Story .mystory .story-content {
+    margin: 120px 40px;
+}
+#Story .mystory .story-content h2{
+    font-size: 34px;
+}
+#Story .mystory .story-content p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#Story .mystory .story-content a{
+    color: var(--heading-color);
+}
+
+#Story .quotes {
+    margin-top: 300px;
+}
+#Story .quotes img {
+    margin-top: 60px;
+}
+#Story .quotes q {
+    font-size: 13px;
+}
+
+#footer {
+  background: #272626;
+}
+
+#footer h3 {
+  font-size: 26px;
+  font-weight: 400;
+}
+#footer p {
+  color: var(--text-color);
+}
+#footer .social-link {
+  margin-top: 20px;
+}
+#footer i {
+  padding-right: 10px;
+}
+#footer i:hover {
+  color: var(--heading-dark-color);
+  transition: 0.3s;
+}
